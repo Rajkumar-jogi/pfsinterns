@@ -1,0 +1,124 @@
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.admin-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.admin-nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.admin-nav-links li {
+    margin-right: 20px;
+}
+
+.admin-nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.admin-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.admin-button:hover {
+    background-color: #0056b3;
+}
+
+/* Desktop logout button */
+.admin-desktop-logout-btn {
+    display: none;
+}
+
+.admin-menu-icon {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Mobile navigation */
+.admin-mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+.admin-mobile-nav .admin-nav-links {
+    flex-direction: column;
+}
+
+.admin-mobile-nav .admin-nav-links li {
+    margin-right: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+}
+
+.admin-mobile-nav .admin-nav-links li:last-child {
+    border-bottom: none;
+}
+
+.admin-mobile-logout-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .admin-desktop-nav {
+        display: none;
+    }
+
+    .admin-menu-icon {
+        display: block;
+    }
+
+    .admin-mobile-nav {
+        display: flex;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .admin-mobile-nav {
+        display: none;
+    }
+
+    .admin-desktop-nav {
+        display: flex;
+    }
+
+    .admin-menu-icon {
+        display: none;
+    }
+}

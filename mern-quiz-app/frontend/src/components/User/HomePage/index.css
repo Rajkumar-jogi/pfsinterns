@@ -1,0 +1,38 @@
+.home-main{
+    background-color: #232223;
+    min-height: 100vh;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.content-container p{
+    font-size: 26px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.welcome-heading{
+    font-size: 32px;
+    font-weight: 500;
+    color: #ffffff !important;
+}
+
+.check-btn{
+    background-color: rgba(5, 98, 184, 0.819);
+    height: 36px;
+    width: 120px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+

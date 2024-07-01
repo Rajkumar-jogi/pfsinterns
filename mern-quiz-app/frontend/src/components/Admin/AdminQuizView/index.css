@@ -1,0 +1,101 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Question Styles */
+.question-container {
+    margin-bottom: 20px;
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Option Styles */
+.option-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.option input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Answer Styles */
+.answer {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p, li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+}
+
+

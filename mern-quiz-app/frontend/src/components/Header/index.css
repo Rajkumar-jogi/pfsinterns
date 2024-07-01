@@ -1,0 +1,136 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+/* Desktop logout button */
+.desktop-logout-btn {
+    display: none;
+}
+
+.menu-icon {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Mobile navigation */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(46, 46, 46, 0.5);
+}
+
+.mobile-nav .nav-links {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mobile-nav .nav-links li {
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+    width: 100% !important;
+    background-color: transparent;
+    text-align: center;
+}
+
+
+.mobile-nav .nav-links li:hover{
+    background-color: #302f2f;
+}
+
+
+.mobile-logout-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 767px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+    
+    .desktop-logout-btn{
+        display: none;
+    }
+
+}
+
+/* for desktop */
+@media (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .desktop-logout-btn{
+        display: block;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+}

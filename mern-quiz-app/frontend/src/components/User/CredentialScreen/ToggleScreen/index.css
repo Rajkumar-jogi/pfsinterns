@@ -1,0 +1,32 @@
+.main{
+    min-height: 100vh;
+    background-color: #8ebcee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    max-width: 500px;
+    width: 90%;
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.toggle-button{
+    background-color: rgba(236, 240, 9, 0.8);
+    border: none;
+    height: 36px;
+    width: 90%;
+    max-width: 200px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    border-radius: 12px;
+}
+
+.toggle-button:hover{
+    background-color: rgba(233, 235, 108, 0.8);
+}
